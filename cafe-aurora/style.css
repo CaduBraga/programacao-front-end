@@ -17,18 +17,18 @@
 
 @font-face {
     font-family: 'Pacifico';
-    src: url('resources/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype')
+    src: url('assets/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype')
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('resources/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    src: url('assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
     font-size: 700;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('resources/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
     font-size: 400;
 }
 
