@@ -1,0 +1,208 @@
+html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
+
+header,
+main,
+footer {
+    max-width: 100%;
+    margin: auto;
+    padding: 2%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+#logo img {
+    height: 5rem;
+    width: auto;
+}
+
+.menu img {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: auto;
+}
+
+.destaque img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.destaque h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.destaque p {
+    font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+    max-width: 50rem;
+}
+
+.conteudo-adicional h2 {
+    font-size: clamp(1.3rem, 2vw, 2rem);
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.conteudo-adicional p {
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    line-height: 1.5;
+    margin: auto;
+}
+
+.conteudo-adicional ul {
+    margin: auto;
+}
+
+.conteudo-adicional li {
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 5%;
+    margin: auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+footer {
+    background-color: #fff;
+}
+
+.conteudo-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer h1 {
+    font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+
+}
+
+footer p,
+footer a {
+    font-size: clamp(0.875rem, 1vw, 1rem);
+    color: #555;
+}
+
+.cards-footer {
+    list-style: none;
+}
+
+.cards-footer li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.linha {
+    border-top: 1px solid #ccc;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.slogan {
+    max-width: 15rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .destaque {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .destaque img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .menu img {
+        height: 5rem;
+        width: auto;
+        display: block;
+    }
+
+    .conteudo-adicional {
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .destaque img {
+        width: 13rem;
+        height: 13rem;
+    }
+}

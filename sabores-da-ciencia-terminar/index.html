@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <div id="logo"><img src="/assets/imagens/logo.png" alt="Logo do Sabores da Ciência com um símbolo de átomo.">
+            <h1>Sabores da Ciência</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinos/cardapio.html">Cardápio</a></li>
+                <li><a href="destinos/sobre.html">Sobre</a></li>
+                <li><a href="destinos/contato.html">Contato</a></li>
+                <li><a class="reserva" href="destinos/reserva.html">Reservar mesa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio">
+            <h1>Cada prato é uma nova descoberta</h1>
+            <h2>Uma jornada gastronômica guiada pelos maiores nomes da ciência.</h2>
+            <div class="linksInicio">
+                <ul>
+                    <li><a href="destinos/cardapio.html">Ver Cardápio</a></li>
+                    <li><a class="reserva" href="destinos/reserva.html">Reservar mesa</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="principal">
+            <section class="destaques">
+                <h1>Pratos em destaque</h1>
+                <p>Nossas reações mais saborosas, testadas e aprovadas pelos melhores paladares. Experimente os
+                    favoritos que fazem a ciência do sabor acontecer!</p>
+
+                <div class="cardapio-destaque">
+                    <div class="prato">
+                        <img src="/assets/imagens/cardapio/pratos/bohr.jpg" alt="Prato inspirado em Niels Bohr">
+                        <h2>Bife de Bohr</h2>
+                        <p class="descricao">Bife grelhado com anéis de cebola empilhados, representando os níveis de
+                            energia dos elétrons.</p>
+                        <p class="preco">R$ 45,00</p>
+                        <a href="destinos/cardapio.html" class="verMais">Ver mais</a>
+                    </div>
+
+                    <div class="prato">
+                        <img src="/assets/imagens/cardapio/pratos/einstein.jpg"
+                            alt="Prato inspirado em Albert Einstein">
+                        <h2>Espaguete de Einstein</h2>
+                        <p class="descricao">Espaguete ao molho bolonhesa servido em espiral, com almôndega recheada no
+                            centro.</p>
+                        <p class="preco">R$ 36,00</p>
+                        <a href="destinos/cardapio.html" class="verMais">Ver mais</a>
+                    </div>
+
+                    <div class="prato">
+                        <img src="/assets/imagens/cardapio/pratos/oswaldo.jpg" alt="Prato inspirado em Oswaldo Cruz">
+                        <h2>Hambúrguer de Oswaldo</h2>
+                        <p class="descricao">Hambúrguer artesanal com alface, tomate e molho de alho — uma explosão de
+                            sabor e proteção.</p>
+                        <p class="preco">R$ 34,50</p>
+                        <a href="destinos/cardapio.html" class="verMais">Ver mais</a>
+                    </div>
+
+                    <div class="prato">
+                        <img src="/assets/imagens/cardapio/pratos/rosalind.jpg"
+                            alt="Lasanha inspirada em Rosalind Franklin">
+                        <h2>Lasanha de Rosalind</h2>
+                        <p class="descricao">Lasanha com camadas visíveis de ingredientes coloridos,
+                            simulando a estrutura do DNA.</p>
+                        <p class="preco">R$ 36,00</p>
+                        <a href="destinos/cardapio.html" class="verMais">Ver mais</a>
+                    </div>
+
+                    <div class="prato">
+                        <img src="/assets/imagens/cardapio/pratos/darwin.jpg" alt="Tábua inspirada em Darwin">
+                        <h2>Tábua de Darwin</h2>
+                        <p class="descricao">Seleção de queijos e frios apresentados em ordem de complexidade crescente
+                            — "evoluindo" no sabor.</p>
+                        <p class="preco">R$ 48,50</p>
+                        <a href="destinos/cardapio.html" class="verMais">Ver mais</a>
+                    </div>
+
+                    <div class="prato">
+                        <img src="/assets/imagens/cardapio/pratos/galileu.jpg"
+                            alt="Frango inspirado em Galileu Galilei">
+                        <h2>Frango Galileano</h2>
+                        <p class="descricao">Frango assado em formato espiral, com especiarias alinhadas como planetas
+                            em órbita.</p>
+                        <p class="preco">R$ 42,90</p>
+                        <a href="destinos/cardapio.html" class="verMais">Ver mais</a>
+                    </div>
+                </div>
+            </section>
+
+            <aside>
+                <video src="/assets/videos/videoAside.mp4" controls></video>
+                <h2>Horários de Funcionamento</h2>
+                <div class="horariosAside">
+                    <div class="horarios">
+                        <p>Segunda</p>
+                        <p>Fechado</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Terça - Quinta</p>
+                        <p>18h00 - 23h00</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Sexta - Domingo</p>
+                        <p>18h00 - 00h30</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Feriados</p>
+                        <p>18h00 - 23h30</p>
+                    </div>
+                </div>
+                <h2>Reservar Mesa</h2>
+                <!-- aprendi a utilizar o formspree e decidi implementá-lo no meu código -->
+                <form id="formularioReserva" action="https://formspree.io/f/xpwrdgvq" method="POST">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div>
+                        <label for="email">Seu Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div>
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+                    <div>
+                        <label for="pessoas">Número de pessoas:</label>
+                        <input type="number" id="pessoas" name="pessoas" required>
+                    </div>
+                    <div>
+                        <label for="observacoes">Observações:</label>
+                        <textarea id="observacoes" name="observacoes"></textarea>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </aside>
+        </div>
+
+
+        <section class="avaliacoes">
+            <h1>O que nossos clientes dizem</h1>
+            <p>Análises precisas de quem já provou nossas experiências. Sabor e ciência em perfeita reação!</p>
+            <div class="grupoAvaliacoes">
+                <div class="avaliacao">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Uma experiência única! Cada prato é uma obra de arte científica."</p>
+                    <p>- Maria S.</p>
+                    <p>05/06/2025</p>
+                </div>
+                <div class="avaliacao">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"A combinação perfeita de ciência e sabor. Recomendo a todos!"</p>
+                    <p>- João P.</p>
+                    <p>03/06/2025</p>
+                </div>
+                <div class="avaliacao">
+                    <p>⭐⭐⭐⭐</p>
+                    <p>"Adorei o ambiente e a criatividade dos pratos. Voltarei com certeza!"</p>
+                    <p>- Ana L.</p>
+                    <p>01/06/2025</p>
+                </div>
+                <div class="avaliacao">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>"Excelente atendimento e pratos inovadores. Uma experiência inesquecível!"</p>
+                    <p>- Lucas M.</p>
+                    <p>04/06/2025</p>
+                </div>
+                <div class="avaliacao">
+                    <p>⭐⭐⭐⭐</p>
+                    <p>"Ambiente acolhedor e sabores surpreendentes. Voltarei em breve!"</p>
+                    <p>- Fernanda R.</p>
+                    <p>02/06/2025</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="novidades">
+            <h1>Fique por dentro das novidades</h1>
+            <p>Inscreva-se na nossa lista de emais para receber as melhores promoções!</p>
+            <form>
+                <input type="email" placeholder="Insira seu email aqui">
+                <!-- placeholder é para aparecer a mensagem na caixa do input-->
+                <input type="submit" value="Inscrever-se">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteudoFooter">
+            <div class="slogan">
+                <div id="logo"><img src="/assets/imagens/logo.png"
+                        alt="Logo do Sabores da Ciência com um símbolo de átomo.">
+                    <h1>Sabores da Ciência</h1>
+                </div>
+                <p>Nosso cardápio é uma verdadeira jornada pelo conhecimento: de Newton a Curie, cada prato é uma fusão
+                    entre ciência, cultura e prazer gastronômico.</p>
+            </div>
+
+            <div>
+                <ul class="linksRapidos">
+                    <li>
+                        <h1>Links rápidos</h1>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinos/cardapio.html">Cardápio</a></li>
+                    <li><a href="destinos/sobre.html">Sobre nós</a></li>
+                    <li><a href="destinos/contato.html">Contato</a></li>
+                    <li><a href="destinos/reserva.html">Reservar mesa</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h1>Horário de funcionamento</h1>
+                <div class="horarioFuncionamento">
+                    <div class="horarios">
+                        <p>Segunda</p>
+                        <p>Fechado</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Terça - Quinta</p>
+                        <p>18h00 - 23h00</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Sexta - Domingo</p>
+                        <p>18h00 - 00h30</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Feriados</p>
+                        <p>18h00 - 23h30</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1>Contato</h1>
+                <p>☞ Rua Galileu Galilei, 42 – Centro Científico <br>
+                    São Paulo - SP, 01000-000</p>
+                <p>✆ (11) 1234-5678</p>
+                <p>✉ contato@saboresdaciencia.com.br</p>
+            </div>
+        </div>
+
+        <hr class="linha">
+        <p class="copyright">© 2025 Sabores da Ciência. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

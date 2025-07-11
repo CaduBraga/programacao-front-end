@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #0c1b2e;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 10px;
+}
+
+#logo img {
+    width: 60px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+ul,
+li {
+    list-style: none;
+    color: #2E2E2E;
+}
+
+h1,
+h2,
+p,
+a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: #2E2E2E;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #0c1b2e;
+    padding: 0 15px;
+}
+
+footer ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudoFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.linksRapidos {
+    display: flex;
+    flex-direction: column;
+    color: #F0F0F0;
+    align-items: flex-start;
+}
+
+.slogan {
+    font-size: 15px;
+    max-width: 18%;
+}
+
+.copyright {
+    display: flex;
+    color: #F0F0F0;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.inicio {
+    background-image: url(/assets/imagens/background.jpg);
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+}
+
+.inicio h1,
+.inicio h2 {
+    margin: 0 0 0 10px;
+    color: #F0F0F0;
+    max-width: 35%;
+}
+
+.inicio h1 {
+    font-size: 50px;
+}
+
+.inicio h2 {
+    margin-bottom: 30px;
+}
+
+.linksInicio ul {
+    display: flex;
+    gap: 10px;
+}
+
+.reserva {
+    border-radius: 10px;
+    color: #2E2E2E;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+.reserva:hover {
+    background-color: #94D2BD;
+}
+
+.horarios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.horarioFuncionamento {
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.novidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.novidades h1,
+.novidades p {
+    color: #2E2E2E;
+}
+
+.novidades h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.novidades form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.novidades input[type="email"] {
+    border: none;
+    border-radius: 10px;
+}
+
+.novidades input[type="submit"] {
+    padding: 15px;
+    background-color: #2E2E2E;
+    color: #F0F0F0;
+    border: none;
+    border-radius: 10px;
+}
+
+.novidades input[type="submit"]:hover {
+    background-color: #0c1b2e;
+}
+
+.avaliacoes {
+    padding: 10px 10px 25px;
+    text-align: center;
+    background-color: #2E2E2E;
+}
+
+.avaliacoes h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.grupoAvaliacoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.avaliacao {
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    color: #2E2E2E;
+}
+
+.avaliacao p {
+    color: #2E2E2E;
+}
+
+.destaques {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+}
+
+.destaques h1 {
+    font-size: 40px;
+    color: #0c1b2e;
+    margin: 0;
+}
+
+.destaques p {
+    color: #0c1b2e;
+    max-width: 50%;
+    margin: 10px auto;
+}
+
+.cardapio-destaque {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.verMais {
+    background-color: #f0f0f0;
+    color: #2E2E2E;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.verMais:hover {
+    background-color: #2E2E2E;
+    color: #f0f0f0;
+}
+
+.principal {
+    display: flex;
+}
+
+.prato {
+    background-color: #0c1b2e;
+    padding: 10px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.prato h2 {
+    font-size: 20px;
+    color: #f0f0f0;
+    margin: 10px;
+}
+
+.prato p {
+    color: #f0f0f0;
+}
+
+.prato .preco {
+    font-weight: bold;
+}
+
+.prato img {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+}
+
+aside {
+    background-color: #0c1b2e;
+    color: #F0F0F0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prato:hover,
+.avaliacao:hover,
+form input[type="submit"]:hover {
+    transform: scale(1.03);
+    /* aumenta o ícone ao passar o mouse por cima */
+}
+
+form {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+}
+
+form label {
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+    color: #0c1b2e;
+
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form textarea {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #2E2E2E;
+    border-radius: 10px;
+    background: #fff;
+    color: #0c1b2e;
+}
+
+.button-group button[type="submit"] {
+    background-color: #0c1b2e;
+    color: #f0f0f0;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button-group button[type="submit"]:hover {
+    background-color: #2E2E2E;
+}
+
+.button-group button[type="button"] {
+    background-color: #f0f0f0;
+    color: #0c1b2e;
+    padding: 12px 24px;
+    border: 1px solid #0c1b2e;
+    border-radius: 10px;
+}
+
+.button-group button[type="button"]:hover {
+    background-color: #94D2BD;
+    color: #2E2E2E;
+}
+
+.horariosAside {
+    margin: 15px;
+}
+
+.tituloCardapio h2 {
+    color: #0c1b2e;
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.titulo {
+    font-size: 40px;
+    color: #0c1b2e;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #0c1b2e;
+    text-align: center;
+}
+
+.historiaFilosofia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.historia,
+.textoFilosofia {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    color: #2E2E2E;
+    width: 45%;
+    margin: 10px;
+}
+
+.historia h2,
+.textoFilosofia h2 {
+    color: #0c1b2e;
+}
+
+.imagemHistoria img,
+.imagemFilosofia img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.filosofia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.equipeAmbiente {
+    text-align: center;
+}
+
+.equipeAmbiente h2 {
+    color: #0c1b2e;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.descricaoEquipe {
+    color: #2E2E2E;
+}
+
+.imagensAmbiente {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imagensAmbiente img {
+    max-width: 320px;
+    border-radius: 10px;
+
+}
+
+.voltarHome {
+    display: flex;
+    justify-content: center;
+}
+
+.botaoVoltar {
+    background-color: #0c1b2e;
+    color: #f0f0f0;
+    padding: 12px 32px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.botaoVoltar:hover {
+    background-color: #94D2BD;
+    color: #2E2E2E;
+}
+
+.cardapio {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.prato {
+    background-color: #0c1b2e;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.prato h3,
+.prato p {
+    color: #f0f0f0;
+}
+
+.prato:hover {
+    transform: scale(1.03);
+}
+
+.preco {
+    font-weight: bold;
+}
+
+.textoFilosofia p,
+.historia p {
+    color: #0c1b2e;
+}
+
+/* REVISAR */
+
+.containerContato {
+    width: 500px;
+    margin:10px auto;
+    background: #0c1b2e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerContato .titulo {
+    color: #F0F0F0;
+}
+
+.containerContato .subtitulo {
+    color: #f0f0f0;
+    text-align: center;
+    font-weight: 100;
+}
+
+.contatoFlex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 10px auto;
+}
+
+.blocoForm {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 24px 20px 20px 20px;
+    width: 420px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.blocoForm h2 {
+    color: #0c1b2e;
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.blocoForm form > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.blocoForm label {
+    width: 110px;
+    text-align: right;
+    font-weight: bold;
+    color: #0c1b2e;
+}
+
+.blocoForm input[type="text"],
+.blocoForm input[type="email"],
+.blocoForm input[type="date"],
+.blocoForm input[type="time"],
+.blocoForm input[type="number"],
+.blocoForm textarea {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #2E2E2E;
+    border-radius: 10px;
+    background: #fff;
+    color: #0c1b2e;
+    flex: 1;
+}
+
+.blocoForm textarea {
+    min-height: 50px;
+    resize: vertical;
+}
+
+.blocoForm .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.blocoForm .button-group button[type="submit"] {
+    background-color: #0c1b2e;
+    color: #f0f0f0;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.blocoForm .button-group button[type="submit"]:hover {
+    background-color: #005F73;
+}
+
+.blocoForm .button-group button[type="button"] {
+    background-color: #f0f0f0;
+    color: #0c1b2e;
+    padding: 10px 24px;
+    border: 1px solid #0c1b2e;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.blocoForm .button-group button[type="button"]:hover {
+    background-color: #94D2BD;
+    color: #2E2E2E;
+}
+
+.blocoInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 320px;
+}
+
+.informacoes, .horarioContato {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px 18px;
+    color: #0c1b2e;
+    box-shadow: 0 2px 8px #0001;
+    font-size: 16px;
+}
+
+.informacoes h2, .horarioContato h2 {
+    color: #0c1b2e;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.informacoes h3 {
+    color: #0c1b2e;
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 16px;
+}
+
+.informacoes h3:first-of-type {
+    margin-top: 0;
+}
+
+.informacoes p, .horarioContato p {
+    margin: 0 0 10px 0;
+    color: #0c1b2e;
+    font-size: 15px;
+}
+
+.informacoes p:last-child, .horarioContato p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .contatoFlex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        max-width: 98vw;
+    }
+    .blocoForm, .blocoInfos {
+        width: 100%;
+        min-width: 0;
+    }
+}

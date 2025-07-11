@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contato | Sabores da Ciência</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="/assets/imagens/logo.png" alt="Logo do Sabores da Ciência com um símbolo de átomo." />
+            <h1>Sabores da Ciência</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li>
+                    <a class="reserva" href="reserva.html">Reservar mesa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo">Entre em Contato</h1>
+        <h2 class="subtitulo">Adoraríamos ouvir de você! Seja para reservas, feedback ou qualquer outra questão, nossa equipe está pronta para ajudar.</h2>
+        <div class="contatoFlex">
+            <div class="blocoForm">
+                <h2>Envie uma Mensagem</h2>
+                <form id="formularioContato" action="https://formspree.io/f/xpwrdgvq" method="POST">
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Seu Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div>
+                        <label for="message">Sua Mensagem:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit">Enviar</button>
+                        <button type="button" onclick="location.href='../index.html'">Voltar ao Início</button>
+                    </div>
+                </form>
+            </div>
+            <div class="blocoInfos">
+                <div class="informacoes">
+                    <h2>Nossas Informações</h2>
+                    <h3>Endereço</h3>
+                    <p>Rua Galileu Galilei, 42 – Centro Científico<br>São Paulo - SP, 01000-000</p>
+                    <h3>Telefone</h3>
+                    <p>(11) 1234-5678</p>
+                    <h3>E-mail</h3>
+                    <p>contato@saboresdaciencia.com.br</p>
+                </div>
+                <div class="horarioContato">
+                    <h2>Horário de Funcionamento</h2>
+                    <p>Segunda - Quinta: 18h00 - 23h00</p>
+                    <p>Sexta - Domingo: 18h00 - 00h30</p>
+                    <p>Feriados: 18h00 - 23h30</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>    
+        <div class="conteudoFooter">
+            <div class="slogan">
+                <div id="logo">
+                    <img src="/assets/imagens/logo.png" alt="Logo do Sabores da Ciência com um símbolo de átomo." />
+                    <h1>Sabores da Ciência</h1>
+                </div>
+                <p>
+                    Nosso cardápio é uma verdadeira jornada pelo conhecimento: de Newton a Curie, cada prato é uma fusão
+                    entre ciência, cultura e prazer gastronômico.
+                </p>
+            </div>
+            <div>
+                <ul class="linksRapidos">
+                    <li>
+                        <h1>Links rápidos</h1>
+                    </li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="reserva.html">Reservar mesa</a></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Horário de funcionamento</h1>
+                <div class="horarioFuncionamento">
+                    <div class="horarios">
+                        <p>Segunda</p>
+                        <p>Fechado</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Terça - Quinta</p>
+                        <p>18h00 - 23h00</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Sexta - Domingo</p>
+                        <p>18h00 - 00h30</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Feriados</p>
+                        <p>18h00 - 23h30</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1>Contato</h1>
+                <p>
+                    ☞ Rua Galileu Galilei, 42 – Centro Científico <br />
+                    São Paulo - SP, 01000-000
+                </p>
+                <p>✆ (11) 1234-5678</p>
+                <p>✉ contato@saboresdaciencia.com.br</p>
+            </div>
+        </div>
+        <hr />
+        <p class="copyright">
+            © 2025 Sabores da Ciência. Todos os direitos reservados.
+        </p>
+    </footer>
+</body>
+
+</html>
