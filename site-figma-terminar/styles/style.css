@@ -30,7 +30,7 @@ body {
   padding: 15px 20px;
 }
 
-#header > div {
+#header>div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,7 +128,7 @@ body {
   border-radius: 12px;
 }
 
-#features {
+#gray-box {
   background: var(--light-gray);
   padding: 60px 20px;
 }
@@ -143,7 +143,7 @@ body {
   letter-spacing: 1.2px;
 }
 
-#features > div {
+#features>div {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -185,7 +185,7 @@ body {
   padding: 60px 20px 20px;
 }
 
-#footer > div:first-child {
+#footer>div:first-child {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -221,7 +221,7 @@ body {
   letter-spacing: 0px;
 }
 
-#footer > div:nth-child(2) {
+#footer>div:nth-child(2) {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -238,7 +238,7 @@ body {
   line-height: 2;
 }
 
-#footer > div:last-child {
+#footer>div:last-child {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -249,7 +249,7 @@ body {
   font-size: 14px;
 }
 
-#footer > div:last-child p {
+#footer>div:last-child p {
   margin-bottom: 10px;
 }
 
@@ -263,7 +263,7 @@ body {
     font-size: 32px;
   }
 
-  #features > div {
+  #features>div {
     flex-direction: row;
     align-items: flex-start;
   }
@@ -276,7 +276,7 @@ body {
     flex: 1;
   }
 
-  #footer > div:nth-child(2) {
+  #footer>div:nth-child(2) {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -312,32 +312,32 @@ body {
     font-size: 36px;
   }
 
-  #footer > div:first-child {
+  #footer>div:first-child {
     text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  #footer > div:first-child div:first-child {
+  #footer>div:first-child div:first-child {
     flex: 1;
     max-width: 400px;
   }
 
-  #footer > div:nth-child(2) {
+  #footer>div:nth-child(2) {
     flex-direction: row;
     gap: 60px;
     text-align: left;
   }
 
-  #footer > div:last-child {
+  #footer>div:last-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
   }
 
-  #footer > div:last-child p {
+  #footer>div:last-child p {
     margin-bottom: 0;
   }
 }
