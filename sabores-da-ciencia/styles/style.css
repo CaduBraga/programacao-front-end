@@ -14,14 +14,14 @@ header {
     background-color: #0c1b2e;
 }
 
-#logo {
+.logo {
     display: flex;
     align-items: center;
     font-family: 'Playfair Display', serif;
     font-size: 10px;
 }
 
-#logo img {
+.logo img {
     width: 60px;
     height: auto;
 }
@@ -97,7 +97,7 @@ footer ul {
 }
 
 .inicio {
-    background-image: url(/assets/imagens/background.jpg);
+    background-image: url(../assets/images/background.jpg);
     object-fit: cover;
     width: 100%;
     height: 300px;
@@ -380,7 +380,7 @@ form textarea {
     color: #0c1b2e;
     font-size: 40px;
     margin: 10px;
-    margin-left: 30px;
+    text-align: center;
 }
 
 .titulo {
@@ -443,6 +443,8 @@ form textarea {
 
 .descricaoEquipe {
     color: #2E2E2E;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .imagensAmbiente {
@@ -460,6 +462,7 @@ form textarea {
 .voltarHome {
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 
 .botaoVoltar {
