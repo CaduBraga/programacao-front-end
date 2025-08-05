@@ -684,3 +684,176 @@ form textarea {
         min-width: 0;
     }
 }
+
+/* Estilos para páginas individuais dos pratos */
+.voltar-cardapio {
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.voltar-cardapio a {
+    color: #0c1b2e;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.voltar-cardapio a:hover {
+    color: #2E2E2E;
+}
+
+.prato-destaque {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-prato {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    display: flex;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.imagem-prato {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-prato img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.detalhes-prato {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.categoria {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.nome-prato {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0c1b2e;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.preco-prato {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0c1b2e;
+    margin-bottom: 20px;
+}
+
+.descricao-prato {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.botao-reserva {
+    background: #fff;
+    border: 2px solid #0c1b2e;
+    color: #0c1b2e;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.botao-reserva:hover {
+    background: #0c1b2e;
+    color: #fff;
+}
+
+.outros-pratos {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.outros-pratos h2 {
+    color: #0c1b2e;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid-outros-pratos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-outro-prato {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-outro-prato:hover {
+    transform: translateY(-5px);
+}
+
+.card-outro-prato img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-outro-prato h3 {
+    color: #0c1b2e;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-outro-prato .preco {
+    color: #0c1b2e;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .card-prato {
+        flex-direction: column;
+    }
+    
+    .imagem-prato img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .grid-outros-pratos {
+        grid-template-columns: 1fr;
+    }
+}
