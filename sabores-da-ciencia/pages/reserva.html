@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar Mesa - Sabores da Ciência</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+        
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="Logo do Sabores da Ciência com um símbolo de átomo.">
+            <h1>Sabores da Ciência</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a class="reserva" href="reserva.html">Reservar mesa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="reserva-container">
+            <div class="reserva-header">
+                <h1>Reservar Mesa</h1>
+                <h2>Faça sua reserva e garanta seu lugar em nosso restaurante</h2>
+            </div>
+
+            <div class="formulario-reserva">
+                <form>
+                    <div class="form-row">
+                        <div class="campo">
+                            <label for="nome"><i class="fas fa-user"></i>Nome Completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email"><i class="fas fa-envelope"></i>Email</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row full">
+                        <div class="campo">
+                            <label for="telefone"><i class="fas fa-phone"></i>Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row three">
+                        <div class="campo">
+                            <label for="data"><i class="fas fa-calendar"></i>Data</label>
+                            <input type="date" id="data" name="data" required>
+                            <i class="fas fa-calendar input-icon"></i>
+                        </div>
+                        <div class="campo">
+                            <label for="horario"><i class="fas fa-clock"></i>Horário</label>
+                            <select id="horario" name="horario" required>
+                                <option value="">Selecione</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                                <option value="22:00">22:00</option>
+                                <option value="23:00">23:00</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="pessoas"><i class="fas fa-users"></i>Pessoas</label>
+                            <select id="pessoas" name="pessoas" required>
+                                <option value="">Quantas?</option>
+                                <option value="1">1 pessoa</option>
+                                <option value="2">2 pessoas</option>
+                                <option value="3">3 pessoas</option>
+                                <option value="4">4 pessoas</option>
+                                <option value="5">5 pessoas</option>
+                                <option value="6">6 pessoas</option>
+                                <option value="7+">7+ pessoas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row full">
+                        <div class="campo">
+                            <label for="observacoes"><i class="fas fa-file-alt"></i>Observações (opcional)</label>
+                            <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma informação adicional, preferências alimentares, etc."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="botao-reserva">
+                        <i class="fas fa-check"></i> Confirmar Reserva
+                    </button>
+                </form>
+            </div>
+
+            <div class="informacoes-importantes">
+                <h3>Informações Importantes</h3>
+                <div class="info-grid">
+                    <div class="info-section">
+                        <h4><i class="fas fa-clock"></i> Horário de Funcionamento</h4>
+                        <div class="horario-item">
+                            <span class="dia">Segunda - Quinta</span>
+                            <span class="horario">18h00 - 23h00</span>
+                        </div>
+                        <div class="horario-item">
+                            <span class="dia">Sexta - Sábado</span>
+                            <span class="horario">18h00 - 00h30</span>
+                        </div>
+                        <div class="horario-item">
+                            <span class="dia">Domingo</span>
+                            <span class="horario">18h00 - 22h00</span>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <h4><i class="fas fa-info-circle"></i> Políticas de Reserva</h4>
+                        <div class="politica-item">
+                            <span>Confirmação por email em até 2 horas</span>
+                        </div>
+                        <div class="politica-item">
+                            <span>Tolerância de 15 minutos de atraso</span>
+                        </div>
+                        <div class="politica-item">
+                            <span>Cancelamento até 2 horas antes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="conteudoFooter">
+          <div class="slogan">
+            <div class="logo">
+              <img src="../assets/images/logo.png" alt="Logo do Sabores da Ciência com um símbolo de átomo." />
+              <h1>Sabores da Ciência</h1>
+            </div>
+            <p>
+              Nosso cardápio é uma verdadeira jornada pelo conhecimento: de Newton a Curie, cada prato é uma fusão entre ciência, cultura e prazer gastronômico.
+            </p>
+          </div>
+          <div>
+            <ul class="linksRapidos">
+              <li>
+                <h1>Links rápidos</h1>
+              </li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="cardapio.html">Cardápio</a></li>
+              <li><a href="sobre.html">Sobre nós</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a href="reserva.html">Reservar mesa</a></li>
+            </ul>
+          </div>
+          <div>
+            <h1>Horário de funcionamento</h1>
+            <div class="horarioFuncionamento">
+              <div class="horarios">
+                <p>Segunda</p>
+                <p>Fechado</p>
+              </div>
+              <div class="horarios">
+                <p>Terça - Quinta</p>
+                <p>18h00 - 23h00</p>
+              </div>
+              <div class="horarios">
+                <p>Sexta - Domingo</p>
+                <p>18h00 - 00h30</p>
+              </div>
+              <div class="horarios">
+                <p>Feriados</p>
+                <p>18h00 - 23h30</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1>Contato</h1>
+            <p>
+              ☞ Rua Galileu Galilei, 42 – Centro Científico <br />
+              São Paulo - SP, 01000-000
+            </p>
+            <p>✆ (11) 1234-5678</p>
+            <p>✉ contato@saboresdaciencia.com.br</p>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">
+          © 2025 Sabores da Ciência. Todos os direitos reservados.
+        </p>
+      </footer>
+</body>
+
+</html> 
