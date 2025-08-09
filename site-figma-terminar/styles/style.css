@@ -150,25 +150,10 @@ button {
 #watch-a-demo {
     background: transparent;
     color: #2563eb;
-    border: ;
+    border: 1px solid #EDEDED;
+    margin-top: 16px;
 }
 
-/*
-.btn-secondary {
-    background: transparent;
-    color: #2563eb;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    justify-content: center;
-    width: 100%;
-}
-*/
 /*
 h2 {
     font-size: 1.75rem;
