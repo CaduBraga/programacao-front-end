@@ -963,59 +963,769 @@ footer hr {
 }
 
 @media (min-width: 1440px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
 
-    /*especifico*/
-    .container {
+    /* Header */
+    header {
         max-width: 1400px;
-        padding: 0 60px;
+        margin: 0 auto;
+        padding: 20px 60px;
+        margin-top: 0;
     }
 
-    .hero {
-        padding: 5rem 0;
+    nav {
+        display: flex;
+        align-items: center;
     }
 
-    h1 {
-        font-size: 3.5rem;
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        margin: 0;
     }
 
-    .hero p {
-        font-size: 1.125rem;
+    nav a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 16px;
     }
 
-    .features,
-    .storage-options,
-    .data-recovery,
-    .advantages,
-    .testimonials {
-        padding: 5rem 0;
+    header button {
+        display: block;
+        width: auto;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
-    .dashboard-preview img {
-        max-width: 500px;
+    #menu-icon {
+        display: none;
     }
 
-    .feature-image img {
-        max-width: 450px;
+    #hero {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
     }
 
-    .advantage-image img {
-        max-width: 450px;
+    #hero > *:not(#dashboard) {
+        grid-column: 1;
     }
 
-    .stats-grid {
-        gap: 3rem;
+    #dashboard {
+        grid-column: 2;
+        grid-row: 1 / span 6;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #rating {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    #hero h1 {
+        font-size: 56px;
+        line-height: 120%;
+        margin: 0 0 24px 0;
+        width: auto;
+    }
+
+    #hero p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 40px;
+        width: auto;
+    }
+
+    #sign-up-for-free {
+        margin: 0 0 16px 0;
+        width: auto;
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+    #watch-a-demo {
+        margin: 0 0 40px 0;
+        width: auto;
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+    #avaliation {
+        margin-top: 0;
+    }
+
+    /* Dashboard - Layout reorganizado */
+    #dashboard > div {
+        display: flex;
+        gap: 20px;
+    }
+
+    #website-stats-activity {
+        width: 200px;
+        height: 140px;
+        margin: 0;
+    }
+
+    #traffic-channels {
+        width: 200px;
+        height: 340px;
+    }
+
+    #real-time-sales {
+        width: 350px;
+        height: 190px;
+        margin: 0;
+    }
+
+    #revenue-vs-orders {
+        width: 350px;
+        height: 240px;
+        margin: 0;
+    }
+
+    /* Partners Section */
+    #partners {
+        margin: 0;
+        padding: 40px 60px;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    #partners img {
+        height: 40px;
+        width: auto;
+    }
+
+    /* Features Section */
+    #features {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 60px;
+        text-align: center;
+    }
+
+    #features h2 {
+        width: auto;
+        margin: 0 0 24px 0;
+        font-size: 48px;
+    }
+
+    #features p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 60px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #stats-grid > div {
+        display: contents;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 40px 20px;
+        border: 1px solid #EDEDED;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
 
     .stat-item h3 {
-        font-size: 3rem;
+        font-size: 48px;
+        margin-bottom: 16px;
+    }
+
+    .stat-item h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .stat-item p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Offers Section */
+    #offers {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    #offers h2 {
+        width: auto;
+        margin: 0 0 24px 0;
+        font-size: 48px;
+    }
+
+    #offers p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    #offers > div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    #offers > div:first-of-type > div {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    #offers > div:first-of-type img {
+        width: 32px;
+        height: 32px;
+    }
+
+    #offers > div:first-of-type p {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text-color);
+        margin: 0;
+    }
+
+    #offers > div:last-of-type {
+        margin: 0;
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    #my-data {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 280px;
+        height: 240px;
+        margin: 0;
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    #my-data > div:first-of-type {
+        width: auto;
+        height: auto;
+        margin: 0 0 24px 0;
+        justify-content: space-between;
+    }
+
+    #my-data h5 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    #three-points {
+        width: 24px;
+        height: 24px;
+        gap: 4px;
+    }
+
+    .point {
+        width: 4px;
+        height: 4px;
+        border: 2px solid #98A2B3;
+        background-color: #98A2B3;
+    }
+
+    #datas {
+        width: auto;
+        height: auto;
+        gap: 16px;
+    }
+
+    .data {
+        width: auto;
+        min-height: auto;
+        padding: 16px;
+        gap: 16px;
+        border-radius: 8px;
+    }
+
+    .data img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .data h6 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+    }
+
+    .data hr {
+        height: 4px;
+        border-radius: 2px;
+        width: 200px;
+    }
+
+    #datas .data:nth-child(1) hr:not(.back) {
+        width: 140px;
+    }
+
+    #datas .data:nth-child(2) hr:not(.back) {
+        width: 160px;
+    }
+
+    #datas .data:nth-child(3) hr:not(.back) {
+        width: 200px;
+    }
+
+    .text {
+        width: 200px;
+        height: auto;
+        gap: 8px;
+    }
+
+    .text p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    /* Data Recovery Section */
+    #data-recovery {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+    }
+
+    #data-recovery h2 {
+        width: auto;
+        margin: 0 0 24px 0;
+        font-size: 48px;
+    }
+
+    #data-recovery p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    #feature-list {
+        margin: 0;
+        gap: 24px;
+    }
+
+    .feature-item {
+        gap: 16px;
+        align-items: center;
+    }
+
+    .feature-item img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .feature-item p {
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--text-color);
+        font-weight: 500;
+    }
+
+    #feature-graphic {
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #feature-graphic > div {
+        width: 300px;
+        height: 320px;
+        margin: 0;
+        padding: 32px;
+        border-radius: 12px;
+    }
+
+    #feature-graphic h5 {
+        font-size: 20px;
+        padding: 0 0 16px 0;
+        font-weight: 600;
+        line-height: 28px;
+        color: var(--text-color);
+    }
+
+    #legend {
+        gap: 24px;
+        margin: 0 0 24px 0;
+    }
+
+    .circle {
+        width: 12px;
+        height: 12px;
+    }
+
+    #legend p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+    #feature-graphic img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Advantages Section */
+    #advantages {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 60px;
+        text-align: center;
+    }
+
+    #advantages h2 {
+        width: auto;
+        margin: 0 0 24px 0;
+        font-size: 48px;
+    }
+
+    #advantages p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #learn-more {
+        width: auto;
+        height: auto;
+        padding: 16px 32px;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+    #advantage-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin: 0;
+    }
+
+    .advantage-item {
+        width: auto;
+        height: auto;
+        padding: 40px 32px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        position: relative;
+    }
+
+    .advantage-text {
+        width: auto;
+        height: auto;
+        margin: 0 0 32px 0;
+        text-align: left;
+    }
+
+    .advantage-text h3 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .advantage-text p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .icon-bg {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        width: 64px;
+        height: 64px;
+        margin: 0;
+    }
+
+    .icon-bg img {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Testimonials Section */
+    #testimonials {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 60px;
+        text-align: center;
+    }
+
+    #testimonial-header {
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+
+    #testimonial-header h2 {
+        margin-top: 24px;
+        font-size: 48px;
+        line-height: 56px;
+        width: auto;
+    }
+
+    #testimonial-header p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 0;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin: 0;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .testimonial-card {
-        padding: 2rem;
+        padding: 40px 32px;
+        border: 1px solid #EDEDED;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        text-align: left;
     }
 
-    .footer {
-        padding: 4rem 0 2rem;
+    .testimonial-author {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .testimonial-author img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-author h4 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--text-color);
+        margin: 0 0 4px 0;
+    }
+
+    .testimonial-author h5 {
+        font-size: 16px;
+        line-height: 24px;
+        color: #7E8492;
+        margin: 0;
+    }
+
+    .testimonial-card .stars {
+        gap: 8px;
+        margin: 24px 0;
+    }
+
+    .testimonial-card .stars img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .testimonial-card p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 0;
+    }
+
+    #three-lines {
+        margin: 60px 0;
+    }
+
+    #three-lines hr {
+        width: 80px;
+        height: 8px;
+    }
+
+    /* CTA Section */
+    #cta {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 80px 60px;
+        text-align: center;
+    }
+
+    #cta h2 {
+        width: auto;
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 24px;
+    }
+
+    #cta p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #get-started-now {
+        width: auto;
+        height: auto;
+        padding: 16px 32px;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    /* Footer */
+    footer {
+        margin: 0;
+        padding: 80px 60px;
+    }
+
+    footer > * {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer h2 {
+        width: auto;
+        height: auto;
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 40px;
+    }
+
+    #contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .contact-item {
+        width: auto;
+        height: auto;
+        gap: 20px;
+    }
+
+    .contact-item > div {
+        min-width: 56px;
+        height: 56px;
+    }
+
+    .contact-item > div img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact-item p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #footer-logo {
+        width: auto;
+        height: auto;
+        margin: 40px 0;
+        gap: 16px;
+    }
+
+    #footer-logo > div {
+        min-width: 48px;
+        height: 48px;
+    }
+
+    #footer-logo > div img {
+        width: 28px;
+        height: 28px;
+    }
+
+    #footer-nav {
+        width: auto;
+        height: auto;
+        gap: 40px;
+        margin-bottom: 24px;
+    }
+
+    #footer-nav a {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #social-links {
+        gap: 32px;
+        margin-top: 24px;
+    }
+
+    #social-links img {
+        width: 24px;
+        height: 24px;
+    }
+
+    footer hr {
+        width: 100%;
+        max-width: 1400px;
+        margin: 40px auto;
+    }
+
+    #footer-bottom {
+        gap: 32px;
+    }
+
+    #footer-bottom > div {
+        width: auto;
+        height: auto;
+        gap: 40px;
+    }
+
+    #footer-bottom a,
+    #footer-bottom p {
+        font-size: 18px;
+        line-height: 28px;
     }
 }
 
