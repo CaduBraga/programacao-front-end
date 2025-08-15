@@ -125,6 +125,7 @@ header {
 
 .stars img {
     width: 20px;
+    height: 20px;
 }
 
 .stars {
@@ -558,7 +559,6 @@ h5 {
 }
 
 #feature-graphic h5 {
-    /*rever tipografia*/
     font-size: 9.33px;
     padding: 9.32px 9.32px 4.49px;
     font-weight: 600;
@@ -622,117 +622,155 @@ h5 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 335px;
+    height: 326px;
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
 }
 
 .icon-bg {
     background-color: #FAFBFA;
     width: 56px;
     height: 56px;
+    margin-left: 16px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/*
-
-.advantages {
-    padding: 3rem 0;
-    background: #f8fafc;
+.advantage-text {
+    width: 303px;
+    height: 206px;
+    margin: 24px 16px 0;
 }
 
-.advantage-image {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.advantage-image img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 12px;
-}
-
-.advantage-item {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin: 1.5rem 0;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.advantage-icon {
-    width: 48px;
-    height: 48px;
-    background: #2563eb;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.testimonials {
-    padding: 3rem 0;
-}
-
-.testimonial-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.review-link {
-    color: #2563eb;
-    text-decoration: none;
+.advantage-text h3 {
+    font-size: 24px;
     font-weight: 600;
-    margin-bottom: 1rem;
-    display: inline-block;
+    line-height: 130%;
+    letter-spacing: calc(24px * -0.01);
 }
 
-.testimonial-grid {
-    display: grid;
-    gap: 2rem;
+.advantage-text p {
+    font-size: 18px;
+    line-height: 32px;
 }
 
-.testimonial-card {
-    background: #f8fafc;
-    padding: 1.5rem;
-    border-radius: 12px;
+#our-customer-review {
+    width:164px;
+    height: 37px;
+    background-color: #EBF5FD;
+    color: #0258F8;
+    border-radius: 100px;
+}
+
+#testimonial-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 56px;
+}
+
+#testimonials #testimonial-header h2 {
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: calc(20px * -0.01);
+}
+
+#testimonial-header p {
+    text-align: center;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.testimonial-author h5 {
+    color: #7E8492;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .testimonial-author {
     display: flex;
+    gap: 20px;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 1rem;
+}
+
+.testimonial-author > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .testimonial-author img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+width: 60px;
+height: 60px;
 }
 
-.testimonial-author h4 {
-    margin-bottom: 0.25rem;
-}
 
-.testimonial-author span {
-    color: #666;
-    font-size: 0.875rem;
+.testimonial-card .stars img {
+    width: 20px;
+    height: 20px;
+    border-radius: 0.5px;
 }
 
 .testimonial-card .stars {
-    color: #fbbf24;
-    margin-top: 1rem;
+display: flex;
+gap: 6px;
+margin: 24px 0;
 }
 
-.cta-section {
-    padding: 3rem 0;
-    background: #f8fafc;
+#testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.testimonial-card p {
+    color: #1D1E25;
+    margin-top: 24px;
+    line-height: 26px;
+}
+
+#testimonial-grid {
+    margin: 0 24px;
+}
+
+#three-lines {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 24px 0 calc(56px * 2);
+}
+
+#testimonials hr {
+    width: 72px;
+    height: 6px;
+    border: none;
+    background-color: #EBF5FD;
+}
+
+#three-lines hr:first-of-type {
+    background-color: #0258F8;
+}
+
+#cta {
     text-align: center;
 }
+
+#get-started-now {
+    margin-top: 32px;
+    width: 198px;
+    height: 54px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/*
 
 .footer {
     background: #2563eb;
