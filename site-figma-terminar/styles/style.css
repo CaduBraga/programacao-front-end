@@ -173,7 +173,7 @@ button span {
 
 #dashboard {
     display: flex;
- }
+}
 
 #dashboard>div {
     display: flex;
@@ -963,17 +963,15 @@ footer hr {
 }
 
 @media (min-width: 1440px) {
-    body {
-        margin: 0;
-        padding: 0;
+    header {
+        max-width: 1440px;
+        margin: 24px 80px;
+        height: 114px;
     }
 
-    /* Header */
-    header {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 20px 60px;
-        margin-top: 0;
+    header>div {
+        display: flex;
+        gap: 40px;
     }
 
     nav {
@@ -984,8 +982,8 @@ footer hr {
     nav ul {
         display: flex;
         list-style: none;
-        gap: 40px;
-        margin: 0;
+        gap: 32px;
+        margin: 0 ;
     }
 
     nav a {
@@ -993,19 +991,24 @@ footer hr {
         color: var(--text-color);
         font-weight: 500;
         font-size: 16px;
+        line-height: 26px;
     }
 
     header button {
         display: block;
-        width: auto;
-        padding: 12px 24px;
+        width: 181px;
+        height: 54px; 
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 700;
+        line-height: 26px;
+        margin: 8px 0 3px  0;
     }
 
     #menu-icon {
         display: none;
     }
+
+/*terminar*/
 
     #hero {
         max-width: 1400px;
@@ -1017,7 +1020,7 @@ footer hr {
         align-items: center;
     }
 
-    #hero > *:not(#dashboard) {
+    #hero>*:not(#dashboard) {
         grid-column: 1;
     }
 
@@ -1067,8 +1070,7 @@ footer hr {
         margin-top: 0;
     }
 
-    /* Dashboard - Layout reorganizado */
-    #dashboard > div {
+    #dashboard>div {
         display: flex;
         gap: 20px;
     }
@@ -1096,7 +1098,6 @@ footer hr {
         margin: 0;
     }
 
-    /* Partners Section */
     #partners {
         margin: 0;
         padding: 40px 60px;
@@ -1109,7 +1110,6 @@ footer hr {
         width: auto;
     }
 
-    /* Features Section */
     #features {
         max-width: 1400px;
         margin: 0 auto;
@@ -1140,7 +1140,7 @@ footer hr {
         margin: 0 auto;
     }
 
-    #stats-grid > div {
+    #stats-grid>div {
         display: contents;
     }
 
@@ -1168,7 +1168,6 @@ footer hr {
         line-height: 24px;
     }
 
-    /* Offers Section */
     #offers {
         max-width: 1400px;
         margin: 0 auto;
@@ -1191,31 +1190,31 @@ footer hr {
         margin-bottom: 40px;
     }
 
-    #offers > div:first-of-type {
+    #offers>div:first-of-type {
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
 
-    #offers > div:first-of-type > div {
+    #offers>div:first-of-type>div {
         display: flex;
         gap: 16px;
         align-items: center;
     }
 
-    #offers > div:first-of-type img {
+    #offers>div:first-of-type img {
         width: 32px;
         height: 32px;
     }
 
-    #offers > div:first-of-type p {
+    #offers>div:first-of-type p {
         font-size: 18px;
         font-weight: 600;
         color: var(--text-color);
         margin: 0;
     }
 
-    #offers > div:last-of-type {
+    #offers>div:last-of-type {
         margin: 0;
         width: 100%;
         height: 400px;
@@ -1236,7 +1235,7 @@ footer hr {
         border-radius: 12px;
     }
 
-    #my-data > div:first-of-type {
+    #my-data>div:first-of-type {
         width: auto;
         height: auto;
         margin: 0 0 24px 0;
@@ -1316,7 +1315,6 @@ footer hr {
         line-height: 16px;
     }
 
-    /* Data Recovery Section */
     #data-recovery {
         max-width: 1400px;
         margin: 0 auto;
@@ -1373,7 +1371,7 @@ footer hr {
         justify-content: center;
     }
 
-    #feature-graphic > div {
+    #feature-graphic>div {
         width: 300px;
         height: 320px;
         margin: 0;
@@ -1412,7 +1410,6 @@ footer hr {
         margin: 0;
     }
 
-    /* Advantages Section */
     #advantages {
         max-width: 1400px;
         margin: 0 auto;
@@ -1490,7 +1487,6 @@ footer hr {
         height: 32px;
     }
 
-    /* Testimonials Section */
     #testimonials {
         max-width: 1400px;
         margin: 0 auto;
@@ -1587,7 +1583,6 @@ footer hr {
         height: 8px;
     }
 
-    /* CTA Section */
     #cta {
         max-width: 1400px;
         margin: 0 auto;
@@ -1619,13 +1614,12 @@ footer hr {
         margin: 0;
     }
 
-    /* Footer */
     footer {
         margin: 0;
         padding: 80px 60px;
     }
 
-    footer > * {
+    footer>* {
         max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
@@ -1652,12 +1646,12 @@ footer hr {
         gap: 20px;
     }
 
-    .contact-item > div {
+    .contact-item>div {
         min-width: 56px;
         height: 56px;
     }
 
-    .contact-item > div img {
+    .contact-item>div img {
         width: 28px;
         height: 28px;
     }
@@ -1674,12 +1668,12 @@ footer hr {
         gap: 16px;
     }
 
-    #footer-logo > div {
+    #footer-logo>div {
         min-width: 48px;
         height: 48px;
     }
 
-    #footer-logo > div img {
+    #footer-logo>div img {
         width: 28px;
         height: 28px;
     }
@@ -1716,7 +1710,7 @@ footer hr {
         gap: 32px;
     }
 
-    #footer-bottom > div {
+    #footer-bottom>div {
         width: auto;
         height: auto;
         gap: 40px;
