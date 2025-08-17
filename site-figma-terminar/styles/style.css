@@ -4,6 +4,8 @@
 
     --font-family: "Inter", sans-serif;
 
+    --number-features: "Poppins", san-serif;
+
     --font-size-xs: 16px;
 
     --font-weight-medium: 500;
@@ -24,6 +26,11 @@
 @font-face {
     font-family: "Maronpe";
     src: url("../assets/fonts/Maronpe/Maronpe-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
 }
 
 body {
@@ -203,12 +210,16 @@ button span {
     margin: 11.43px 0 0 8.68px;
 }
 
-#partners {
+#partners-mobile {
     display: flex;
     gap: 24px;
     background-color: #0258F8;
     margin: 0 -20px;
     padding: 16.58px 0 16.31px;
+}
+
+#partners-desktop {
+    display: none;
 }
 
 h2 {
@@ -256,7 +267,7 @@ h2 {
 .stat-item h3 {
     color: #0258F8;
     font-size: 32px;
-    font-weight: 6 00;
+    font-weight: 600;
     margin-bottom: 12px;
 }
 
@@ -963,13 +974,18 @@ footer hr {
 }
 
 @media (min-width: 1440px) {
+
+    body {
+        margin: 0 112px;
+    }
+
     header {
         max-width: 1440px;
-        margin: 24px 80px;
+        margin: 0 -40px;
         height: 114px;
     }
 
-    header>div {
+    header > div {
         display: flex;
         gap: 40px;
     }
@@ -1008,165 +1024,216 @@ footer hr {
         display: none;
     }
 
-/*terminar*/
-
     #hero {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 80px 60px;
+        width: 1216px;
+        margin: 80px 0 150px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 80px;
-        align-items: center;
-    }
-
-    #hero>*:not(#dashboard) {
-        grid-column: 1;
+        gap: 0 34px;
     }
 
     #dashboard {
         grid-column: 2;
         grid-row: 1 / span 6;
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
+        justify-content: space-between;
+        gap: 16.17px;
+        width: 624px;
+        height: 555.7px;
+        margin-top: 11px
     }
-
+    
     #rating {
         margin-top: 0;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
+    }
+
+    #hero #rating p {
+        margin: 0;
     }
 
     #hero h1 {
-        font-size: 56px;
-        line-height: 120%;
-        margin: 0 0 24px 0;
-        width: auto;
+        font-size: 72px;
+        font-weight: 600;
+        width: 535px;
+        height: 258px;
+        letter-spacing: calc(72px * -0.01);
+        margin: 0;
     }
 
     #hero p {
-        font-size: 20px;
+        width: 366px;
+        height: 64px;
+        font-size: 18px;
         line-height: 32px;
-        margin-bottom: 40px;
-        width: auto;
+        margin: 18px 0 48px;
     }
 
-    #sign-up-for-free {
-        margin: 0 0 16px 0;
-        width: auto;
-        padding: 16px 32px;
-        font-size: 18px;
+#buttons {
+    display: flex;
+    gap:32px;
+    width: 420px;
+    height: 54px;
+}
+
+    button {
+        margin: 0 !important;
+        min-width: 194px;
+        padding:  14px 20px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
     }
 
     #watch-a-demo {
-        margin: 0 0 40px 0;
-        width: auto;
-        padding: 16px 32px;
-        font-size: 18px;
+        gap: 10px;
     }
 
     #avaliation {
-        margin-top: 0;
+        margin-top: 56px;
+        gap: 16px;
+        width: 327px;
+        height: 40px;
+    }
+
+    #avaliation p {
+        margin: 0;
+        width: 205px;
+        height: 36px;
     }
 
     #dashboard>div {
         display: flex;
-        gap: 20px;
+        gap: 22.27px;
+    }
+
+    #dashboard > div:nth-child(2) {
+        gap: 21.18px;
     }
 
     #website-stats-activity {
-        width: 200px;
-        height: 140px;
+        width: 222.09px;
+        height: 156.58px;
         margin: 0;
     }
 
     #traffic-channels {
-        width: 200px;
-        height: 340px;
+        width: 222.59px;
+        height: 376.85px;
     }
 
     #real-time-sales {
-        width: 350px;
-        height: 190px;
-        margin: 0;
+        width: 385.24px;
+        height: 210.81px;
+        margin: 31.39px 0 0 0.49  px;
     }
 
     #revenue-vs-orders {
-        width: 350px;
-        height: 240px;
+        width: 385.24px;
+        height: 265.93px;
         margin: 0;
     }
 
-    #partners {
-        margin: 0;
-        padding: 40px 60px;
-        justify-content: center;
-        gap: 60px;
+    #partners-mobile {
+        display: none;
     }
 
-    #partners img {
-        height: 40px;
-        width: auto;
+    #partners-desktop {
+        display: flex;
+        gap: 105.18px;
+        background-color: #0258F8;
+        margin: 0 -112px;
+        padding: 36.58px 0 37.31px;
+    }
+
+    #partners-desktop > div {
+        width: 870.24px;
+        height: 35.11px;;
+        display: flex;
+        gap: 105.03px;
     }
 
     #features {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 80px 60px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 1216px;
+        height: 391px;
+        margin: 112px 0;
     }
 
+#features-text{
+    display: flex;
+    gap:113px;
+}
+
     #features h2 {
-        width: auto;
-        margin: 0 0 24px 0;
-        font-size: 48px;
+        min-width: 779px;
+        height: 134px;
+        margin: 0;
+        font-size: 56px;
+        letter-spacing: calc(56px * -0.01);
     }
 
     #features p {
-        font-size: 20px;
-        line-height: 32px;
         margin-bottom: 60px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 296px;
+        height: 96px;
+        margin: 19px 28px 19px 0;
     }
 
     #stats-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
-        max-width: 1000px;
-        margin: 0 auto;
+        gap: 32px;
+        width: 1216px;
+        height: 161px;
+        margin: 96px 0 112px;
     }
 
-    #stats-grid>div {
-        display: contents;
+    #stats-grid > div {
+        display: flex;
     }
 
-    .stat-item {
-        text-align: center;
-        padding: 40px 20px;
-        border: 1px solid #EDEDED;
-        border-radius: 12px;
-        background: white;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    }
+.stat-item {
+    min-width: 280px;
+    height: 161px;
+    order: 0; /*arrumar*/
+}
 
     .stat-item h3 {
-        font-size: 48px;
-        margin-bottom: 16px;
+        font-family: var(--number-features);
+        width: 280px;
+        height: 67px;
+        font-size: 56px;
+        margin: 0;
+        line-height: 120%;
     }
 
     .stat-item h4 {
+        width: 280px;
+        height: 22px;
         font-size: 20px;
-        margin-bottom: 12px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: calc(20px * -0.01);
+        margin: 12px 0 8px;
     }
 
     .stat-item p {
-        font-size: 16px;
-        line-height: 24px;
+        max-width: 280px;
+        max-height: 52px;
+        font-size: 16px !important;
+        line-height: 26px;
+        margin: 0 !important;
     }
+
+    #stats-grid>div:last-of-type>.stat-item:last-child {
+        margin: 0;
+    }
+
+    /*arrumar*/
+    .stat-item:nth-child(1) { order: 1; }
+    .stat-item:nth-child(2) { order: 3; }
+    .stat-item:nth-child(3) { order: 2; }
+    .stat-item:nth-child(4) { order: 4; }
 
     #offers {
         max-width: 1400px;
