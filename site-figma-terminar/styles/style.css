@@ -4,7 +4,7 @@
 
     --font-family: "Inter", sans-serif;
 
-    --number-features: "Poppins", san-serif;
+    --secondary-font: "Poppins", san-serif;
 
     --font-size-xs: 16px;
 
@@ -55,14 +55,6 @@ h1 {
 
 header img {
     width: 120px;
-}
-
-nav {
-    display: none;
-}
-
-header button {
-    display: none;
 }
 
 header {
@@ -871,6 +863,12 @@ footer hr {
     margin: 24px 0;
 }
 
+#stats-grid-desktop,
+nav,
+header button {
+    display: none;
+}
+
 @media (max-width: 374px) {}
 
 @media (min-width: 376px) {}
@@ -985,7 +983,7 @@ footer hr {
         height: 114px;
     }
 
-    header > div {
+    header>div {
         display: flex;
         gap: 40px;
     }
@@ -999,7 +997,7 @@ footer hr {
         display: flex;
         list-style: none;
         gap: 32px;
-        margin: 0 ;
+        margin: 0;
     }
 
     nav a {
@@ -1013,11 +1011,11 @@ footer hr {
     header button {
         display: block;
         width: 181px;
-        height: 54px; 
+        height: 54px;
         font-size: 16px;
         font-weight: 700;
         line-height: 26px;
-        margin: 8px 0 3px  0;
+        margin: 8px 0 3px 0;
     }
 
     #menu-icon {
@@ -1042,7 +1040,7 @@ footer hr {
         height: 555.7px;
         margin-top: 11px
     }
-    
+
     #rating {
         margin-top: 0;
         margin-bottom: 16px;
@@ -1069,17 +1067,17 @@ footer hr {
         margin: 18px 0 48px;
     }
 
-#buttons {
-    display: flex;
-    gap:32px;
-    width: 420px;
-    height: 54px;
-}
+    #buttons {
+        display: flex;
+        gap: 32px;
+        width: 420px;
+        height: 54px;
+    }
 
     button {
         margin: 0 !important;
         min-width: 194px;
-        padding:  14px 20px;
+        padding: 14px 20px;
         font-size: 16px;
         font-weight: 700;
         line-height: 26px;
@@ -1107,7 +1105,7 @@ footer hr {
         gap: 22.27px;
     }
 
-    #dashboard > div:nth-child(2) {
+    #dashboard>div:nth-child(2) {
         gap: 21.18px;
     }
 
@@ -1125,7 +1123,7 @@ footer hr {
     #real-time-sales {
         width: 385.24px;
         height: 210.81px;
-        margin: 31.39px 0 0 0.49  px;
+        margin: 31.39px 0 0 0.49 px;
     }
 
     #revenue-vs-orders {
@@ -1146,9 +1144,9 @@ footer hr {
         padding: 36.58px 0 37.31px;
     }
 
-    #partners-desktop > div {
+    #partners-desktop>div {
         width: 870.24px;
-        height: 35.11px;;
+        height: 35.11px;
         display: flex;
         gap: 105.03px;
     }
@@ -1161,10 +1159,10 @@ footer hr {
         margin: 112px 0;
     }
 
-#features-text{
-    display: flex;
-    gap:113px;
-}
+    #features-text {
+        display: flex;
+        gap: 113px;
+    }
 
     #features h2 {
         min-width: 779px;
@@ -1182,24 +1180,25 @@ footer hr {
     }
 
     #stats-grid {
+        display: none;
+    }
+
+    #stats-grid-desktop {
+        display: flex;
         gap: 32px;
         width: 1216px;
         height: 161px;
-        margin: 96px 0 112px;
+        margin-bottom: 112px;
+        margin: 96px 0 112px !important;
     }
 
-    #stats-grid > div {
-        display: flex;
+    .stat-item {
+        min-width: 280px;
+        height: 161px;
     }
-
-.stat-item {
-    min-width: 280px;
-    height: 161px;
-    order: 0; /*arrumar*/
-}
 
     .stat-item h3 {
-        font-family: var(--number-features);
+        font-family: var(--secondary-font);
         width: 280px;
         height: 67px;
         font-size: 56px;
@@ -1225,162 +1224,163 @@ footer hr {
         margin: 0 !important;
     }
 
-    #stats-grid>div:last-of-type>.stat-item:last-child {
-        margin: 0;
+    #offers {
+        width: 1216px;
+        margin: 0 !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 56px 141px;
+        align-items: center;
     }
 
-    /*arrumar*/
-    .stat-item:nth-child(1) { order: 1; }
-    .stat-item:nth-child(2) { order: 3; }
-    .stat-item:nth-child(3) { order: 2; }
-    .stat-item:nth-child(4) { order: 4; }
+    #text-offers {
+        margin-top: 112px;
+        display: flex;
+        width: 706px;
+        height: 214px;
+        gap: 16px
+    }
 
-    #offers {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 80px 60px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 80px;
-        align-items: center;
+    #offers-list {
+        width: 369px;
+        height: 120px;
+    }
+
+    #offers-list p {
+        font-weight: 600 !important;
+        line-height: 120% !important;
+        max-width: 333px;
     }
 
     #offers h2 {
-        width: auto;
-        margin: 0 0 24px 0;
-        font-size: 48px;
+        margin: 0;
+        width: 706px;
+        font-size: 56px;
+        letter-spacing: calc(56px * -0.01);
     }
 
     #offers p {
-        font-size: 20px;
-        line-height: 32px;
-        margin-bottom: 40px;
-    }
-
-    #offers>div:first-of-type {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    #offers>div:first-of-type>div {
-        display: flex;
-        gap: 16px;
-        align-items: center;
-    }
-
-    #offers>div:first-of-type img {
-        width: 32px;
-        height: 32px;
-    }
-
-    #offers>div:first-of-type p {
+        width: 498px;
         font-size: 18px;
-        font-weight: 600;
-        color: var(--text-color);
-        margin: 0;
+        line-height: 32px;
+        margin-top: 16px;
     }
 
     #offers>div:last-of-type {
         margin: 0;
-        width: 100%;
-        height: 400px;
+        width: 875px;
+        height: 382px;
         background-size: cover;
         background-position: center;
-        border-radius: 12px;
+        border-radius: 8px;
         position: relative;
     }
 
     #my-data {
         position: absolute;
-        top: 50px;
-        right: 50px;
-        width: 280px;
-        height: 240px;
-        margin: 0;
-        padding: 24px;
-        border-radius: 12px;
-    }
-
-    #my-data>div:first-of-type {
-        width: auto;
-        height: auto;
-        margin: 0 0 24px 0;
-        justify-content: space-between;
-    }
-
-    #my-data h5 {
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 600;
-    }
-
-    #three-points {
-        width: 24px;
-        height: 24px;
-        gap: 4px;
-    }
-
-    .point {
-        width: 4px;
-        height: 4px;
-        border: 2px solid #98A2B3;
-        background-color: #98A2B3;
-    }
-
-    #datas {
-        width: auto;
-        height: auto;
-        gap: 16px;
-    }
-
-    .data {
-        width: auto;
-        min-height: auto;
-        padding: 16px;
-        gap: 16px;
+        width: 328px;
+        height: 295px;
+        margin-top: 48px;
+        margin-left: 24px;
         border-radius: 8px;
     }
 
+    #my-data>div {
+        margin: 0;
+    }
+
+    #my-data>div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 287.84px;
+        height: 24px;
+        margin: 20.92px 211px 20.08px 20.08px;
+    }
+
+    #my-data h5 {
+        font-size: 15.06px;
+        line-height: 23.43px;
+    }
+
+    #three-points {
+        width: 16.73px;
+        height: 16.73px;
+        gap: 1.5px;
+    }
+
+    .point {
+        width: 0;
+        height: 0;
+        border: 1.4px solid #98A2B3;
+    }
+
+    #datas {
+        min-width: 287.84px;
+        height: 200.82px !important;
+        gap: 10.04px;
+        margin: 20.08px 20.08px 29.18px !important;
+    }
+
+    .data {
+        min-width: 287.84px;
+        min-height: 60.24px;
+        gap: 15.06px;
+    }
+
     .data img {
-        width: 32px;
-        height: 32px;
+        width: 33.47px !important;
+        height: 33.47px !important;
+        margin-left: 13.39px;
     }
 
     .data h6 {
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 600;
+        font-size: 11.71px !important;
+        line-height: 16.73px !important;
+        max-width: 212.53px;
+        height: 17px;
     }
 
     .data hr {
-        height: 4px;
+        height: 6.69px;
         border-radius: 2px;
-        width: 200px;
+        width: 212.53px;
+        border: 0 !important;
     }
 
     #datas .data:nth-child(1) hr:not(.back) {
-        width: 140px;
+        width: 122.21px;
     }
 
     #datas .data:nth-child(2) hr:not(.back) {
-        width: 160px;
+        width: 140.54px;
     }
 
     #datas .data:nth-child(3) hr:not(.back) {
-        width: 200px;
+        width: 177.2px;
+    }
+
+    .data:nth-child(2) h6 {
+        min-width: 148.14px;
+    }
+
+    .data:nth-child(3) h6 {
+        min-width: 155.14px;
     }
 
     .text {
-        width: 200px;
-        height: auto;
-        gap: 8px;
+        width: 212.53px;
+        height: 17PX;
+        gap: 13.39px;
     }
 
     .text p {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 11.71px !important;
+        line-height: 16.73px !important;
+        font-weight: 400;
     }
+
+    /*terminar*/
 
     #data-recovery {
         max-width: 1400px;
@@ -1477,35 +1477,37 @@ footer hr {
         margin: 0;
     }
 
+    /*acima*/
+
     #advantages {
         max-width: 1400px;
-        margin: 0 auto;
-        padding: 80px 60px;
-        text-align: center;
     }
 
     #advantages h2 {
-        width: auto;
-        margin: 0 0 24px 0;
-        font-size: 48px;
+        width: 719px;
+        height: 67px;
+        font-family: var(--secondary-font);
+        margin: 156px 0 16px 0;
+        font-size: 56px;
+        letter-spacing: calc(56px * -0.01);
     }
 
     #advantages p {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 32px;
-        margin-bottom: 40px;
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 533px;
+        height: 64px;
     }
 
     #learn-more {
-        width: auto;
-        height: auto;
-        padding: 16px 32px;
-        font-size: 18px;
-        margin-bottom: 60px;
+        min-width: 142px !important;
+        height: 54px;
+        padding: 14px 20px;
+        font-size: 16px;
+        margin: 54px 0 70px;
     }
+
+    /*terminar*/
 
     #advantage-list {
         display: grid;
@@ -1790,6 +1792,4 @@ footer hr {
     }
 }
 
-@media (min-width: 1920px) {
-    /*terminar*/
-}
+@media (min-width: 1920px) {}
