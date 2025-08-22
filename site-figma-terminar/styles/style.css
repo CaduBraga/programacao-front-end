@@ -456,9 +456,8 @@ h5 {
     border: 1px solid #D1FADF;
 }
 
-.text p {
-    font-weight: 400 !important;
-    /*para sobrescrever o font-weight de 700*/
+#datas .text p {
+    font-weight: 400;
     font-size: 6.68px;
 }
 
@@ -537,14 +536,14 @@ h5 {
     color: #2E2C34;
 }
 
-#legend {
+.legend {
     display: flex;
     gap: 16px;
     align-items: center;
     margin-left: 9.33px;
 }
 
-#legend>div {
+.legend>div {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -557,11 +556,20 @@ h5 {
     background-color: #546FFA;
 }
 
-#legend>div:nth-child(2) .circle {
+.legend>div:nth-child(2) .circle {
     background-color: #24AA4A;
 }
 
-#legend p {
+.legend>div:nth-child(3) .circle {
+    background-color: #E2E2EA;
+    margin-right: 11px;
+}
+
+#feature-graphics .feature-graphic:nth-of-type(2) {
+    display: none;
+}
+
+#data-recovery .legend p {
     font-size: 8.17px;
     font-weight: 500;
     line-height: 11.67px;
@@ -1206,13 +1214,13 @@ header button {
         display: none;
     }
 
-    #stats-grid-desktop {
+    #features #stats-grid-desktop {
         display: flex;
         gap: 32px;
         width: 1216px;
         height: 161px;
         margin-bottom: 112px;
-        margin: 96px 0 112px !important;
+        margin: 96px 0 112px;
     }
 
     .stat-item {
@@ -1238,12 +1246,12 @@ header button {
         margin: 12px 0 8px;
     }
 
-    .stat-item p {
+    #stats-grid .stat-item p {
         max-width: 280px;
         max-height: 52px;
-        font-size: 16px !important;
+        font-size: 16px;
         line-height: 26px;
-        margin: 0 !important;
+        margin: 0;
     }
 
     #offers {
@@ -1268,9 +1276,9 @@ header button {
         height: 120px;
     }
 
-    #offers-list p {
-        font-weight: 600 !important;
-        line-height: 120% !important;
+    #offers #offers-list p {
+        font-weight: 600;
+        line-height: 120%;
         max-width: 333px;
     }
 
@@ -1337,11 +1345,11 @@ header button {
         border: 1.4px solid #98A2B3;
     }
 
-    #datas {
+    #my-data #datas {
         min-width: 287.84px;
-        height: 200.82px !important;
+        height: 200.82px;
         gap: 10.04px;
-        margin: 20.08px 20.08px 29.18px !important;
+        margin: 20.08px 20.08px 29.18px;
     }
 
     .data {
@@ -1350,24 +1358,24 @@ header button {
         gap: 15.06px;
     }
 
-    .data img {
-        width: 33.47px !important;
-        height: 33.47px !important;
+    #datas .data img {
+        width: 33.47px;
+        height: 33.47px;
         margin-left: 13.39px;
     }
 
-    .data h6 {
-        font-size: 11.71px !important;
-        line-height: 16.73px !important;
+    #datas .data h6 {
+        font-size: 11.71px;
+        line-height: 16.73px;
         max-width: 212.53px;
         height: 17px;
     }
 
-    .data hr {
+    #datas .data hr {
         height: 6.69px;
         border-radius: 2px;
         width: 212.53px;
-        border: 0 !important;
+        border: 0;
     }
 
     #datas .data:nth-child(1) hr:not(.back) {
@@ -1396,9 +1404,9 @@ header button {
         gap: 13.39px;
     }
 
-    .text p {
-        font-size: 11.71px !important;
-        line-height: 16.73px !important;
+    #datas .text p {
+        font-size: 11.71px;
+        line-height: 16.73px;
         font-weight: 400;
     }
 
@@ -1449,11 +1457,11 @@ header button {
         height: 24px;
     }
 
-    .feature-item p {
+    #feature-list .feature-item p {
         max-width: 327px;
-        height: 22px !important;
+        height: 22px;
         min-width: 217px;
-        line-height: 120% !important;
+        line-height: 120%;
         color: var(--text-color);
     }
 
@@ -1478,9 +1486,27 @@ header button {
         font-weight: 600;
     }
 
-    #legend {
+    .legend {
         gap: 16px;
         margin-left: 16px;
+    }
+
+    .legend>div:nth-child(1) {
+        margin-right: 6px;
+    }
+
+    .legend>div:nth-child(2) {
+        margin-right: 20px;
+    }
+
+    #feature-graphics {
+        display: flex;
+        gap: 40px;
+    }
+
+    #feature-graphics .feature-graphic:nth-of-type(2) {
+        display: block;
+        background-image: url(../assets/images/background6.png);
     }
 
     .circle {
@@ -1488,11 +1514,11 @@ header button {
         height: 7px;
     }
 
-    #legend p {
+    #data-recovery .legend p {
         font-size: 14px;
         line-height: 20px;
         font-weight: 500;
-        width: 37px;
+        max-width: 48px;
         height: 20px;
     }
 
@@ -1524,15 +1550,12 @@ header button {
     }
 
     #learn-more {
+        margin: 40px 0 56px !important;
         min-width: 142px !important;
         height: 54px;
         padding: 14px 20px;
         font-size: 16px;
         margin: 54px 0 70px;
-    }
-
-    #learn-more {
-        margin: 40px 0 56px !important;
     }
 
     #advantage-list {
