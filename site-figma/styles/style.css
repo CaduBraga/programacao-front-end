@@ -424,7 +424,7 @@ header button {
 
 #offers>div:last-of-type {
     margin: var(--space-2xl) 0 var(--space-md);
-    background-image: url(../assets/images/background4.jpg);
+    background-image: url(../assets/images/background1.png);
     width: 335px;
     height: 242px;
 }
@@ -614,7 +614,7 @@ header button {
 }
 
 .feature-graphic {
-    background-image: url(../assets/images/background5.jpg);
+    background-image: url(../assets/images/background2.png);
     font-family: var(--font-quaternary);
     width: 335px;
     height: 242px;
@@ -1630,7 +1630,7 @@ footer hr {
 
     #feature-graphics .feature-graphic:nth-of-type(2) {
         display: block;
-        background-image: url(../assets/images/background6.png);
+        background-image: url(../assets/images/background3.png);
     }
 
     .circle {
