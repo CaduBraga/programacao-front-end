@@ -5,6 +5,21 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.1.0] - 2024-12-20
+
+### Adicionado
+- **Melhorias de Acessibilidade no Site Figma**:
+  - Implementação de atributos `alt` descritivos para todas as imagens
+  - Descrições contextuais para logos, ícones e elementos visuais
+  - Conformidade com padrões WCAG para acessibilidade web
+  - Experiência inclusiva para usuários com leitores de tela
+
+### Melhorado
+- **Documentação do Projeto**:
+  - Atualização do README principal com informações sobre acessibilidade
+  - Criação de README específico para o projeto site-figma
+  - Documentação das melhorias implementadas
+
 ## [1.0.0] - 2024-12-19
 
 ### Adicionado
@@ -37,6 +52,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 - JavaScript para interatividade
 - Figma para prototipagem
 - Git para versionamento
+- Acessibilidade Web (WCAG) para experiência inclusiva
 
 ## [0.9.0] - 2024-12-18
 

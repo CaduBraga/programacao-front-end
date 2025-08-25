@@ -54,6 +54,8 @@ A disciplina de Programação Front-End aborda os fundamentos e práticas modern
 ### 9. **Site Figma** (`site-figma/`)
 - Versão finalizada do projeto Figma
 - Criação do site a partir do protótipo de alta fidelidade do Figma
+- **Melhorias de Acessibilidade**: Implementação de atributos `alt` descritivos para todas as imagens
+- Foco em experiência inclusiva e conformidade com padrões WCAG
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -62,6 +64,10 @@ A disciplina de Programação Front-End aborda os fundamentos e práticas modern
   - Flexbox para layouts responsivos
   - Transformações e animações
   - Paletas de cores consistentes
+- **Acessibilidade Web** - Implementação de boas práticas
+  - Atributos `alt` descritivos
+  - Conformidade com padrões WCAG
+  - Experiência inclusiva para todos os usuários
 
 ## 📁 Estrutura do Repositório
 
@@ -99,6 +105,8 @@ programacao-front-end/
 - O projeto **Sabores da Ciência** representa o trabalho mais completo e elaborado
 - Os designs seguem padrões modernos de UX/UI
 - Código organizado e comentado para facilitar o aprendizado
+- **Foco em Acessibilidade**: Implementação de boas práticas de acessibilidade web em todos os projetos
+- **Experiência Inclusiva**: Garantia de que todos os usuários possam acessar o conteúdo de forma adequada
 
 ## 📋 Documentação do Projeto
 
