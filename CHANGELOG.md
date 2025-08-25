@@ -5,6 +5,21 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [1.2.0] - 2024-12-21
+
+### Adicionado
+- **Projeto Café Aurora com Tailwind CSS**:
+  - Implementação da versão Tailwind CSS do site Café Aurora
+  - Uso de classes utilitárias do Tailwind para estilização moderna
+  - Design responsivo e componentes pré-construídos
+  - Demonstração de diferentes abordagens de estilização (CSS puro vs Tailwind)
+
+### Melhorado
+- **Documentação do Projeto**:
+  - Atualização do README com informações sobre Tailwind CSS
+  - Documentação das duas versões do projeto Café Aurora
+  - Explicação das tecnologias utilizadas em cada abordagem
+
 ## [1.1.0] - 2024-12-20
 
 ### Adicionado
@@ -66,6 +81,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
   - Design responsivo e moderno
   - Apresentação de produtos e horários
   - Tipografia personalizada com fontes Google
+  - **Versão CSS Puro**: Implementação tradicional com CSS customizado
 
 ## [0.8.0] - 2024-12-17
 

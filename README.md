@@ -22,6 +22,8 @@ A disciplina de Programação Front-End aborda os fundamentos e práticas modern
 - Site para uma cafeteria fictícia
 - Design responsivo e moderno
 - Apresentação de produtos e horários de funcionamento
+- **Versão Tailwind CSS** (`tailwind/`): Implementação usando Tailwind CSS para estilização moderna e responsiva
+- **Versão CSS Puro** (`styles/`): Implementação tradicional com CSS customizado
 
 ### 4. **Jardim Botânico** (`jardim-botanico/`)
 - Site institucional para um jardim botânico
@@ -64,6 +66,10 @@ A disciplina de Programação Front-End aborda os fundamentos e práticas modern
   - Flexbox para layouts responsivos
   - Transformações e animações
   - Paletas de cores consistentes
+- **Tailwind CSS** - Framework CSS utilitário para desenvolvimento rápido
+  - Classes utilitárias para estilização
+  - Sistema de design responsivo
+  - Componentes pré-construídos
 - **Acessibilidade Web** - Implementação de boas práticas
   - Atributos `alt` descritivos
   - Conformidade com padrões WCAG
@@ -76,6 +82,9 @@ programacao-front-end/
 ├── primeira-aula/
 ├── about-me/
 ├── cafe-aurora/
+│   ├── tailwind/          # Versão com Tailwind CSS
+│   ├── styles/            # Versão com CSS customizado
+│   └── assets/            # Recursos (imagens, fontes)
 ├── jardim-botanico/
 ├── site-viagens/
 ├── site-figma/
@@ -107,6 +116,7 @@ programacao-front-end/
 - Código organizado e comentado para facilitar o aprendizado
 - **Foco em Acessibilidade**: Implementação de boas práticas de acessibilidade web em todos os projetos
 - **Experiência Inclusiva**: Garantia de que todos os usuários possam acessar o conteúdo de forma adequada
+- **Diversidade Tecnológica**: Projetos desenvolvidos com diferentes abordagens (CSS puro e Tailwind CSS)
 
 ## 📋 Documentação do Projeto
 
