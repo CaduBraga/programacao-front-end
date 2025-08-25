@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Café Aurora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header p-8">
+        <div class="container header-inner flex justify-between">
+            <div class="logo">
+                <h1 class="text-amber-800 text-6xl font-bold font-['Pacifico',cursive]">Café Aurora</h1>
+            </div>
+
+            <nav class="menu flex items-center" aria-label="">
+                <div class="menu-mobile block md:hidden " aria-label="Menu Mobile">
+                    <button>&#9776;</button>
+                </div>
+
+                <ul class="menu-desktop flex flex-row gap-4 hidden md:flex" aria-label="Menu Desktop">
+                    <li> <a href="#">Inicio</a></li>
+                    <li> <a href="#">Cardapio</a></li>
+                    <li> <a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero bg-[url(../assets/images/aurora-capa.jpg)] bg-cover bg-center p-20 relative">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="hero-overlay relative">
+                <div class="container hero-content">
+                    <h2 class="text-5xl text-center font-bold text-stone-100">Sinta o sabor do verdadeiro café</h2>
+                    <p class="text-center text-xl text-stone-100 mb-9">Uma experiência única de sabores intensos e
+                        aromas envolventes, preparados com grãos selecionados
+                        e
+                        muito carinho.</p>
+                    <a class="flex text-stone-100 p-4 font-bold bg-amber-800 justify-center mx-40 rounded">Conheça Nosso Cardápio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products flex justify-center">
+            <div class="container m-6">
+                <h2 class="text-center font-bold text-4xl text-neutral-700 mt-15 mb-3 ">Nossos Cafés Especiais</h2>
+                <p class="text-center mb-9 text-gray-700 text-lg">Descubra nossa seleção de cafés premium,
+                    cuidadosamente preparados para oferecer uma
+                    experiência sensorial inesquecível.</p>
+
+                <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4">
+                    <div class="card bg-orange-50 rounded-xl shadow-lg">
+                        <img class="rounded w-full" src="../assets/images/espresso.jpg" alt="Café Espresso">
+                        <div class="card-body m-6">
+                            <h3 class="font-bold text-gray-700 text-lg">Espresso Clássico</h3>
+                            <p class="text-gray-700 mb-3 mt-2 text-base">Intenso e encorpado, com crema perfeita e notas
+                                de chocolate amargo.</p>
+                            <span class="text-amber-800 font-bold">R$ 8,90</span>
+                        </div>
+                    </div>
+
+                    <div class="card bg-orange-50 rounded-xl shadow-lg">
+                        <img class="rounded w-full" src="../assets/images/capuccino.jpg" alt="Cappuccino Cremoso">
+                        <div class="card-body m-6">
+                            <h3 class="font-bold text-gray-700 text-lg">Cappuccino Cremoso</h3>
+                            <p class="text-gray-700 mb-3 mt-2 text-base">Equilibrado e suave, com espuma aveludada e
+                                canela polvilhada.</p>
+                            <span class="price text-amber-800 font-bold">R$ 12,50</span>
+                        </div>
+                    </div>
+
+                    <div class="card bg-orange-50 rounded-xl shadow-lg">
+                        <img class="rounded w-full" src="../assets/images/cafe-gelado.jpg" alt="Café Gelado">
+                        <div class="card-body m-6">
+                            <h3 class="font-bold text-gray-700 text-lg">Café Gelado</h3>
+                            <p class="text-gray-700 mb-3 mt-2 text-base">Refrescante e aromático, com toques de calda de caramelo</p>
+                            <span class="price text-amber-800 font-bold">R$ 14,90</span>
+                        </div>
+                    </div>
+
+                    <div class="card bg-orange-50 rounded-xl shadow-lg">
+                        <img class="rounded w-full" src="../assets/images/cafe-coado-especial.jpg" alt="Café Coado Especial">
+                        <div class="card-body m-6">
+                            <h3 class="font-bold text-gray-700 text-lg">Café Coado Especial</h3>
+                            <p class="text-gray-700 mb-3 mt-2 text-base">Método tradicional que realça notas frutas e
+                                acidez equilibrada</p>
+                            <span class="price text-amber-800 font-bold">R$ 10,50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact bg-orange-50 p-8">
+            <div class="max-w-4xl mx-auto contact-box flex flex-col md:flex-row gap-8">
+                <div class="contact-text flex flex-col justify-center bg-stone-50 p-8 rounded-lg flex-1">
+                    <h2 class="text-4xl font-bold text-gray-700 mb-6">Horário de funcionamento</h2>
+                    
+                    <div class="hours flex flex-col text-center space-y-4 mb-6">
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Segunda a sexta</span>
+                            <span class="text-gray-600 font-bold">07:00 - 20:00</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Sábado</span>
+                            <span class="text-gray-600 font-bold">08:00 - 22:00</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="font-medium">Domingo</span>
+                            <span class="text-gray-600 font-bold">09:00 - 18:00</span>
+                        </div>
+                    </div>
+
+                    <div class="address mb-6">
+                        <p class="font-bold text-gray-700 mb-2">Endereço</p>
+                        <p class="text-gray-600">Rua das Flores, 123 - Centro</p>
+                        <p class="text-gray-600">São Paulo, SP</p>
+                    </div>
+
+                    <a href="#" class="btn bg-amber-800 text-white px-4 py-3 rounded-lg text-center font-bold">Ver no Mapa</a>
+                </div>
+
+                <div class="contact-img flex-1">
+                    <img src="../assets/images/aurora-horario.jpg" alt="Café sendo servido"
+                        class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer bg-stone-800 text-white p-8">
+
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="footer-brand mb-6">
+                <h3 class="logo font-['Pacifico',cursive] font-bold text-neutral-50 text-3xl mb-2">Café Aurora</h3>
+                <p class="text-gray-300">O melhor café da cidade desde 2015</p>
+            </div>
+
+            <div class="footer-social">
+                <div class="social-icons flex justify-center gap-4 mb-4">
+                    <a href="https://www.instagram.com" class="hover:opacity-80 transition-opacity">
+                        <img src="../assets/images/instagram.png" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.facebook.com" class="hover:opacity-80 transition-opacity">
+                        <img src="../assets/images/facebook.png" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.whatsapp.com" class="hover:opacity-80 transition-opacity">
+                        <img src="../assets/images/whatsapp.png" class="w-8 h-8">
+                    </a>
+                </div>
+                <p class="text-gray-400 text-sm">&copy; 2025 Café Aurora. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
